@@ -62,7 +62,46 @@ h3 {
 }
 
 /* index styles */
+.blogs a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 6px solid crimson;
+}
+.blogs a:hover h3 {
+  transition: color 0.2s ease;
+  color: crimson;
+}
 /* details styles */
+.details {
+  position: relative;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 8px;
+  transition: all 0.2s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+
+  svg {
+    fill: #222;
+  }
+}
+.delete:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+
+  svg {
+    fill: crimson;
+  }
+}
 /* create styles */
 .create-blog form {
   max-width: 400px;
@@ -74,6 +113,10 @@ h3 {
   width: 100%;
   margin: 10px 0;
   padding: 8px;
+  outline: none;
+  font-family: "Noto Serif", serif;
+  background-color: #f0f0f0;
+  border: 1px solid #222;
 }
 .create-blog label {
   display: block;
